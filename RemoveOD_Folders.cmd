@@ -15,11 +15,11 @@ IF %ERRORLEVEL% EQU 0 (
 
 ) ELSE (
    echo.
-   echo -----------------------------------------------
+   echo -----------------------------------------------------------
    echo.
    echo This script must be run as administrator to work properly
    echo.
-   echo -----------------------------------------------
+   echo -----------------------------------------------------------
    echo.
    PAUSE
    EXIT /B 1
@@ -27,11 +27,15 @@ IF %ERRORLEVEL% EQU 0 (
 
 
 echo.
-echo ------------------------------------------
+echo -------------------------------------------------------------------------------
 echo Killing OneDrive and Remove OneDrive Left Overs
 echo.
-echo If OneDrive has already been removed, you would encounter "The system cannot find teh file specified" error
+echo     If OneDrive has already been removed, you might encounter the following
+echo     "ERROR: The process "OneDrive.exe" not found."
+echo      "The system cannot find the file specified."
+echo      "The system cannot find the file specified."
 echo.
+echo -------------------------------------------------------------------------------
 echo.
 @rem Kill OneDrive
 taskkill /f /im OneDrive.exe
@@ -52,8 +56,6 @@ rd "C:\OneDriveTemp" /Q /S
 echo.
 echo.
 echo Completed OneDrive Removal
-echo.
-echo ------------------------------------
 echo.
 
 @rem One Drive from This PC
