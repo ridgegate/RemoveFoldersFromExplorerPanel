@@ -2,4 +2,5 @@
 This is a simple script to remove OneDrive and Folders from This PC
 
 ## Instruction
-Download RemoveOD_Folders.cmd onto your computer and run as Administrator by right click "Run as Administrator"
+* Right click on "RemoveOD_Folders.cmd", select "Save Link As..." and download to your computer.
+* Right click on the downloaded file and click "Run as Administrator"
